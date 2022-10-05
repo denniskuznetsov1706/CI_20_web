@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Metamorphous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: rgb(52, 52, 52);
+    font-family: 'DM Mono', monospace;
+}
+
+
+.navigator {
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    margin-top: 8px;
+    width: 99%;
+}
+.button {
+    width: 100%;
+    height: 75px;
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+    border: none;
+}
+.button:hover {opacity: 0.8; border: rgb(0, 0, 0); border-style: solid;}
+.button1 {background-color: rgb(0, 127, 240);}
+.button2 {background-color: rgb(0, 167, 0);} 
+.button3 {background-color: rgb(224, 174, 0);}  
+.button4 {background-color: rgb(89, 49, 181);} 
+.button5 {background-color: rgb(242, 69, 26);}
+.button6 {background-color: rgb(197, 48, 147);}
+.button7 {background-color: rgb(218, 14, 15); margin: 5px; height: 100px;}
+
+
+.container{
+    padding: 150px;
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    row-gap: 120px;
+    background-color: rgb(52, 52, 52);
+}
+.card{
+    width: 260px;
+    height: 100%;
+    z-index: 100;
+    opacity: 0.5;
+    color: white;
+    margin-top: -250px;
+    border-radius: 16px;
+    
+}
+.card:hover{
+    opacity: 1;
+    z-index: 101;
+    transition: 0.4s;
+    background-color: rgb(29, 29, 29);
+    box-shadow: 10px 10px 10px black;
+}
+.card .img{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(29, 29, 29);
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.card .top-text{
+    background-color:rgb(29, 29, 29);
+    padding: 5px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.card .top-text .name{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px;
+}
+.card .top-text p{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.card .bottom-text{
+    padding: 0 20px 10px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+.card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+.card .bottom-text .text{
+    text-align: justify;
+    font-size: 15px;
+}
+.btn{
+    background-color: rgb(253, 109, 133);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'DM Mono', monospace;
+}
+.btn:hover{
+    background-color: rgb(255, 27, 65);
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+.btn:active{
+    opacity: 0.5;
+    transition: 0s;
+}
