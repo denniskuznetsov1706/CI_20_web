@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     margin: 0;
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 html, body{
+    width: 100%;
     display: grid;
     place-items: center;
     text-align: center;
@@ -45,6 +47,21 @@ html, body{
 .button6 {background-color: rgb(197, 48, 147);}
 .button7 {background-color: rgb(218, 14, 15); margin: 5px; height: 100px;}
 
+
+.search-wrapper{
+    justify-self: center;
+    margin-top: 40px;
+}
+input{
+    font-size: 22px;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+input:focus{
+    outline: none;
+}
 
 .container{
     padding: 150px;
